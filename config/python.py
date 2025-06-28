@@ -1,20 +1,16 @@
-console_scripts = [
-]
-dev_requires = [
-]
-config_requires = [
+""" python deps for this project """
+
+config_requires: list[str] = [
     "pyclassifiers",
 ]
-install_requires = [
-]
-build_requires = [
+build_requires: list[str] = [
     "pydmt",
     "pymakehelper",
 ]
-test_requires = [
+test_requires: list[str] = [
     "pylint",
     "pytest",
     "pytest-cov",
     "mypy",
 ]
-requires = config_requires + install_requires + build_requires + test_requires
+requires = config_requires + build_requires + test_requires
