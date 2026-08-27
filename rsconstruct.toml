@@ -12,9 +12,6 @@ src_dirs = ["config", "tests"]
 [processor.mypy]
 src_dirs = ["config", "tests"]
 
-[processor.requirements]
-src_dirs = ["config", "tests"]
-
 [processor.pytest]
 src_dirs = ["tests"]
 
