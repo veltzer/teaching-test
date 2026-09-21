@@ -9,8 +9,6 @@ reject_dot_src_dirs = true
 [processor.ruff]
 src_dirs = ["tests"]
 
-[processor.pylint]
-src_dirs = ["tests"]
 
 [processor.mypy]
 src_dirs = ["tests"]
