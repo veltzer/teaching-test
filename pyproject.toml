@@ -18,3 +18,7 @@ dev = [
 # Demo/teaching/archive repo: not an installable package.
 package = false
 
+
+[tool.pytest.ini_options]
+# Tests import from here: add.py lives at the repo root and is not an installed package.
+pythonpath = ["."]
