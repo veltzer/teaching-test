@@ -9,7 +9,7 @@ dependencies = []
 
 [dependency-groups]
 dev = [
-    "mypy",
+    "pyrefly",
     "pytest",
     "ruff",
 ]
@@ -22,3 +22,12 @@ package = false
 [tool.pytest.ini_options]
 # Tests import from here: add.py lives at the repo root and is not an installed package.
 pythonpath = ["."]
+
+[tool.pyrefly]
+# Type checking (rsconstruct's pyrefly processor). preset = "legacy" is
+# pyrefly's mypy-compatible behavior; "." on the search path is mypy's
+# implicit current directory.
+preset = "legacy"
+search-path = [
+    ".",
+]
